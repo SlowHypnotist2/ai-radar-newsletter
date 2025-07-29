@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import { summarizeText } from './summarize';
+import { summarizeText } from './utils/summarize';
 
 function App() {
   const [sources, setSources] = useState([
