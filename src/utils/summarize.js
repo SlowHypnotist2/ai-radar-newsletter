@@ -1,7 +1,7 @@
 // src/summarize.js
 
 export async function summarizeText(newsletterText) {
-    const apiKey = 'your-openai-api-key-here'; // ⛔ Don't commit this to GitHub
+    const apiKey = import.meta.env.VITE_OPENAI_API_KEY; // ⛔ Don't commit this to GitHub
     const endpoint = 'https://api.openai.com/v1/chat/completions';
 
     const headers = {
